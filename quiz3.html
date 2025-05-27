@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BukuKu</title>
+  <style>
+    body {
+      background-color: #fdfdfd;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #222;
+      color: wheat;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-right a {
+      color: wheat;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .header-right a:hover {
+     color: #ffcc00;
+     transform: scale(1.05);
+     transition: all 0.3s ease;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    .toko-nama {
+      font-size: 32px;
+      color: wheat;
+      font-weight: bold;
+    }
+
+    .navbar {
+      background-color: #ddd;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .navbar a:hover {
+      color: green;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin: 30px 0 10px;
+    }
+
+    h1:hover {
+      color: green;
+      transition: color 0.3s ease;
+      transform: scale(1.03);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .book-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 180px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .book-card img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .book-card p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .label {
+      display: inline-block;
+      background-color: #eee;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #444;
+      color: wheat;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+        <img src="d:\WebDasar2411058\LogoBuku.jpg" alt="Logo BukuKu" class="logo">
+        <div class="toko-nama">BukuKu</div>
+    </div>
+    <div class="header-right">
+        <a href="checkout.html">🛒 </a>
+        <a href="#" onclick="login()">🔑sign in </a>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="latihan1.html">HOME</a></li>
+      <li><a href="pr3.html">BUKU</a></li>
+      <li><a href="pr1.html">MAJALAH</a></li>
+      <li><a href="pr2.html">KORAN</a></li>
+    </ul>
+  </nav>
+
+  <h1>BUKU BEST SELLER</h1>
+    <div class="container">
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\download (1).jpeg" alt="">
+            <p>ATOMIC HABITS</p>
+            <span class="label">Rp 250.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\images (1).jpeg" alt="">
+            <p>UNDERSTANDING MACHINE LEARNING</p>
+            <span class="label">Rp 300.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\images (3).jpeg" alt="">
+            <p>GENESIS</p>
+            <span class="label">Rp 250.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\images (5).jpeg" alt="">
+            <P>SPACEFARERS</P>
+            <span class="label">Rp. 250.000</span>
+        </div>
+    </div>
+
+    <h1>BUKU</h1>
+    <div class="container">
+        <div class="book-card">
+           <img src="d:\WebDasar2411058\1.jpeg" alt="">
+           <p>ABUNDANCE</p>
+           <span class="label">Rp. 200.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\3.jpeg" alt="">
+            <p>THE COMING WAVE</p>
+            <span class="label">Rp 200.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\4.jpeg" alt="">
+            <p>THE AGE OF AI</p>
+            <span class="label">Rp 300.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\7.jpeg" alt="">
+            <p>COMPUTING AND TECHNOLOGY ETHICS</p>
+            <span class="label">Rp 250.000</span>
+        </div>
+    </div>
+
+  <h1>MAJALAH</h1>
+    <div class="container">
+        <div class="book-card">
+           <img src="d:\WebDasar2411058\download.jpeg" alt="">
+           <p>CLEAN CODE</p>
+           <span class="label">Rp. 300.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\8.jpeg" alt="">
+            <p>THE TECHNOLOGICAL REPUBLIC</p>
+            <span class="label">Rp 250.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\images (2).jpeg" alt="">
+            <p>HTML, CSS, JavaScript</p>
+            <span class="label">Rp 300.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\images (4).jpeg" alt="">
+            <P>ELON MUSK</P>
+            <span class="label">Rp 250.000</span>
+        </div>
+    </div>
+
+  <h1>KORAN</h1>
+    <div class="container">
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\4.jpeg" alt="">
+            <p>THE AGE OF AI</p>
+            <span class="label">Rp 200.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\6.jpeg" alt="">
+            <p>MORE THAN A GLITCH</p>
+            <span class="label">Rp 200.000</span>
+            </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\5.jpeg" alt="">
+            <p>TECHNOLOGY AND SOCIETY</p>
+            <span class="label">Rp 200.000</span>
+        </div>
+        <div class="book-card">
+            <img src="d:\WebDasar2411058\2.jpeg" alt="">
+            <p>FEARLESS</p>
+            <span class="label">Rp 150.000</span>
+        </div>
+    </div>
+
+  <div class="footer">
+    &copy; 2025 BukuKu | Designed by Nadia
+    <p>MAGELANG, NO.4 JAWA TENGAH, INDONESIA</p>
+  </div>
+
+</body>
+</html>
