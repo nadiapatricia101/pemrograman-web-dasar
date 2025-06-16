@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.reg-wrapper {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+    color: darkolivegreen;
+}
+.reg-wrapper .reg a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+.navbar {
+    background: goldenrod;
+    margin: 0;
+    padding: 20px 20px;
+}
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.menu {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;   
+}
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+    color: darkolivegreen;
+}
+
+.toko-nama {
+    margin-left: 500px;
+    font-size: 30px;
+    color:  darkolivegreen;
+    font-weight: bold;
+}
+
+        .body {
+            background-color: white;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 170px;
+            height: 170px;
+            margin-right: 20px;
+        }
+
+        .toko-nama {
+            font-size: 28px;
+            color:darkolivegreen;
+            font-weight: bold;
+            
+        }
+
+        h1 {
+            text-align: center;
+            color: darkolivegreen;
+            margin: 30px 0 10px;
+        }
+
+        h1:hover {
+           color: goldenrod;
+           transition: color 0.3s ease;
+           transform: scale(1.03);
+        }
+        .container {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           gap: 30px;
+           padding: 20px;
+        }
+
+        .book-card {
+           background-color: white;
+           border-radius: 10px;
+           box-shadow: 0 4px 12px darkolivegreen(0, 0, 0, 0.1);
+           width: 180px;
+           text-align: center;
+           transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book-card:hover {
+           transform: scale(1.05);
+           box-shadow: 0 6px 18px darkolivegreen(0, 0, 0, 0.2);
+        }
+
+        .book-card img {
+           width: 100%;
+           border-radius: 10px 10px 0 0;
+        }
+
+        .book-card p {
+           font-size: 16px;
+           margin: 10px 0;
+        }
+
+        .label {
+           display: inline-block;
+           background-color: #eee;
+           color: darkolivegreen;
+           padding: 5px 10px;
+           border-radius: 20px;
+           font-size: 13px;
+           margin-bottom: 10px;
+        }
+
+        .bestseller h1 {
+            text-decoration: underline;
+        }
+
+
+.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: goldenrod;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 2px 8px goldenrod;
+    border-radius: 6px;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: goldenrod;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: beige;
+}
+
+.menu li:hover > .submenu {
+    display: block;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    min-width: 150px;
+}
+
+.submenu li:hover > .submenu {
+    display: block;
+}
