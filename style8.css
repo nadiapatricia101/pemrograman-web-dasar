@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+            text-align: center;
+            color: goldenrod;
+            margin: 30px 0 10px;
+        }
+
+        h1:hover {
+           color: goldenrod;
+           transition: color 0.3s ease;
+           transform: scale(1.03);
+        }
+
+        .container {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           gap: 30px;
+           padding: 20px;
+        }
+
+        .book-card {
+           background-color: white;
+           border-radius: 10px;
+           box-shadow: 0 4px 12px darkolivegreen(0, 0, 0, 0.1);
+           width: 180px;
+           text-align: center;
+           transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book-card:hover {
+           transform: scale(1.05);
+           box-shadow: 0 6px 18px darkolivegreen(0, 0, 0, 0.2);
+        }
+
+        .book-card img {
+           width: 100%;
+           border-radius: 10px 10px 0 0;
+        }
+
+        .book-card p {
+           font-size: 16px;
+           margin: 10px 0;
+        }
+
+        .label {
+           display: inline-block;
+           background-color: #eee;
+           color: darkolivegreen;
+           padding: 5px 10px;
+           border-radius: 20px;
+           font-size: 13px;
+           margin-bottom: 10px;
+        }
+
+        .bestseller h1 {
+            text-decoration: underline;
+        }
+
+
