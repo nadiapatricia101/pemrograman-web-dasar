@@ -1,0 +1,77 @@
+
+
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+.detail-buku {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .detail-buku img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .info-buku {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .info-buku .label {
+            font-weight: bold;
+            color:black;
+        }
+
+        .harga {
+            font-size: 20px;
+            color: goldenrod;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .sinopsis {
+            margin-top: 40px;
+        }
+
+        .sinopsis h3 {
+            margin-bottom: 10px;
+            color: goldenrod;
+        }
+
+        .sinopsis p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+      .tombol {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .beli {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: goldenrod;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .beli:hover {
+            background-color: yellow;
+        }
